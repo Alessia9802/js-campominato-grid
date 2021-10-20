@@ -9,16 +9,17 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
 // Difficoltà 1
 
-const ul = document.querySelector("ul.griglia");
-const ulUno = document.querySelector("ul");
+const containerElement = document.querySelector(".container_2");
 
-for (let i = 1; i <= 100; i++) {
-  console.log(i);
-  const element = `<div class = 'cella'>${i} </div>`;
-  ulUno.innerHTML += element;
-  /* const divEl = document.createElement("div");
-  divEl.className = "cell";
-  console.log(divEl); */
+for (let i = 0; i <= 100; i++) {
+  const divElement = document.createElement("div");
+  divElement.className = "cell";
+  console.log(divElement);
+  containerElement.append(divElement);
+
+  divElement.addEventListener("click", function () {
+    this.style.backgroundColor = "#0a91eb";
+  });
 }
 
 // funzione Math.random
