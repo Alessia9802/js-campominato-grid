@@ -21,6 +21,10 @@ h1 {
   color: white;
 }
 
+.plus {
+  display: flex;
+  flex-wrap: wrap;
+}
 button {
   border: none;
   padding: 1rem;
@@ -28,4 +32,7 @@ button {
   background-color: #413ac2;
   color: white;
   cursor: pointer;
+}
+
+.griglia {
 }
